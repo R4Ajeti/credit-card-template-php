@@ -19,9 +19,9 @@ The "Credit Card Template PHP" repository provides a robust and flexible PHP-bas
 4. **Customize the Template**: Modify the HTML, CSS, and PHP files to fit your needs.
 5. **Deploy**: Deploy your customized credit card payment form to your web server.
 
-## Contributing
+## Created from
 
-We welcome contributions! Please read our [contributing guidelines](link_to_contributing_guidelines) to get started.
+Created by:&nbsp;R1n0. Special thanks&nbsp;to:&nbsp;Nasty &nbsp and &nbsp Getthename.
 
 ## License
 
