@@ -1,0 +1,28 @@
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="jquery-2.1.4.js"></script>
+    </head>
+    <body>
+    <div class="wrapper">
+        <input id="input-cc" type="text"/>
+        <button id="check-cc">Check Type</button>
+    </div>
+    <script src="cleave.js"></script>
+    <script>
+        var cc_type = 'unknown';
+        var cleave = new Cleave('#input-cc', {
+            creditCard: true,
+            delimiter: '-',
+            onCreditCardTypeChanged: function (type) {
+                console.log(type);
+                cc_type = type;
+            }
+        });
+        $('#check-cc').click(function(){
+            alert(cleave.getFormattedValue() + ' is a ' + cc_type + ' card');
+        });
+    </script>
+    </body>
+</html>
